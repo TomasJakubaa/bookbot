@@ -16,10 +16,6 @@ def count_characters(string_file):
 	return dictionary
 
 def sorted_list_dictionaries(dictionary):
-	def sort_on(item):
-		return item["num"]
 	list_dictionaries = []
-	for char, count in dictionary.items():
-		list_dictionaries.append({"char": char, "num": count})
-	list_dictionaries.sort(reverse=True, key=sort_on)
-	return list_dictionaries
+	for pair in dictionary:
+		list.append({"char": 
