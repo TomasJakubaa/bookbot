@@ -1,3 +1,7 @@
+def get_book_text(file_path):
+	with open(file_path) as file:
+		return file.read()
+
 def count_words(string_file):
 	count = 0
 	words = string_file.split()
